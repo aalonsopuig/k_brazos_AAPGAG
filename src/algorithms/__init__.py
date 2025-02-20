@@ -17,7 +17,20 @@ from .algorithm import Algorithm
 from .epsilon_greedy import EpsilonGreedy
 from .ucb1 import UCB1
 from .ucb2 import UCB2
+from .softmax import Softmax 
+from .preference_gradient import PreferenceGradient
+from .thompson_sampling import ThompsonSampling
+from .bayesian_ucb import BayesianUCB
 
 # Lista de módulos o clases públicas
-__all__ = ['Algorithm', 'EpsilonGreedy', 'UCB1', 'UCB2']
+__all__ = [
+    'Algorithm',
+    'EpsilonGreedy',
+    'UCB1',
+    'UCB2',
+    'Softmax',
+    'PreferenceGradient',
+    'ThompsonSampling',
+    'BayesianUCB'
+]
 
