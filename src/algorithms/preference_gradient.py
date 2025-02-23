@@ -65,6 +65,10 @@ class PreferenceGradient(Algorithm):
         """
 
         self.t += 1  # Incrementar contador de pasos
+        self.counts[chosen_arm] += 1  # Registrar selección del brazo
+
+        # Actualizar el valor estimado de recompensa del brazo (media incremental)
+        self.values[chosen_arm] += (reward - self.values[chosen_arm]) / self.counts[chosen_arm]
 
         # Calcular baseline si está activado (promedio de recompensas obtenidas hasta ahora)
         if self.baseline:
@@ -81,6 +85,8 @@ class PreferenceGradient(Algorithm):
             else:
                 # Reduce proporcionalmente la preferencia de los demás brazos
                 self.preferences[a] -= self.alpha * (reward - baseline_value) * self.action_probabilities[a]
+
+
 
     def reset(self):
         """

@@ -1,21 +1,21 @@
 Algorithm,Arm,Mean_Reward,Count
-Softmax (tau=0.1),0,0.0,0
-Softmax (tau=0.1),1,0.8850210970464129,948
-Softmax (tau=0.1),2,0.0,1
-Softmax (tau=0.1),3,0.49999999999999994,36
-Softmax (tau=0.1),4,0.0,1
-Softmax (tau=0.1),5,0.21428571428571433,14
-Softmax (tau=0.1),6,0.0,0
-Softmax (tau=0.1),7,0.0,0
-Softmax (tau=0.1),8,0.0,0
-Softmax (tau=0.1),9,0.0,0
-PreferenceGradient,0,0.0,0
-PreferenceGradient,1,0.0,0
-PreferenceGradient,2,0.0,0
-PreferenceGradient,3,0.0,0
-PreferenceGradient,4,0.0,0
-PreferenceGradient,5,0.0,0
-PreferenceGradient,6,0.0,0
-PreferenceGradient,7,0.0,0
-PreferenceGradient,8,0.0,0
-PreferenceGradient,9,0.0,0
+Softmax (tau=1.5),0,0.3484848484848484,66
+Softmax (tau=1.5),1,0.8484848484848485,165
+Softmax (tau=1.5),2,0.18000000000000005,50
+Softmax (tau=1.5),3,0.6859504132231405,121
+Softmax (tau=1.5),4,0.5394736842105263,76
+Softmax (tau=1.5),5,0.10000000000000003,50
+Softmax (tau=1.5),6,0.7884615384615385,156
+Softmax (tau=1.5),7,0.6578947368421052,76
+Softmax (tau=1.5),8,0.13513513513513514,37
+Softmax (tau=1.5),9,0.9014778325123151,203
+PreferenceGradient,0,0.41161290322580585,2325
+PreferenceGradient,1,0.8599874103282783,168392
+PreferenceGradient,2,0.225268817204301,1860
+PreferenceGradient,3,0.697164196522346,8569
+PreferenceGradient,4,0.5840807174887895,3568
+PreferenceGradient,5,0.15486993345432562,1653
+PreferenceGradient,6,0.7909807521843769,63176
+PreferenceGradient,7,0.6716690326505798,9862
+PreferenceGradient,8,0.10833840535605584,1643
+PreferenceGradient,9,0.8805199370584773,238952

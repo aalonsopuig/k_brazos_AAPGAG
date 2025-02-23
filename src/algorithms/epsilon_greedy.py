@@ -36,7 +36,7 @@ class EpsilonGreedy(Algorithm):
         Selecciona un brazo basado en la política epsilon-greedy.
         :return: índice del brazo seleccionado.
         """
-
+        
         if np.random.random() < self.epsilon:
             # Selecciona un brazo al azar
             chosen_arm = np.random.choice(self.k)

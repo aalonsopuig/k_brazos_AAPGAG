@@ -1,6 +1,6 @@
 Algorithm,Arm,Mean_Reward,Count
 ThompsonSampling,0,0.0,0
-ThompsonSampling,1,0.0,0
+ThompsonSampling,1,1.0,3
 ThompsonSampling,2,0.0,0
 ThompsonSampling,3,0.0,0
 ThompsonSampling,4,0.0,0
@@ -8,7 +8,7 @@ ThompsonSampling,5,0.0,0
 ThompsonSampling,6,0.0,0
 ThompsonSampling,7,0.0,0
 ThompsonSampling,8,0.0,0
-ThompsonSampling,9,0.0,0
+ThompsonSampling,9,0.8756268806419258,997
 BayesianUCB,0,0.0,0
 BayesianUCB,1,0.0,0
 BayesianUCB,2,0.0,0
@@ -18,4 +18,4 @@ BayesianUCB,5,0.0,0
 BayesianUCB,6,0.0,0
 BayesianUCB,7,0.0,0
 BayesianUCB,8,0.0,0
-BayesianUCB,9,0.0,0
+BayesianUCB,9,0.8920000000000003,1000

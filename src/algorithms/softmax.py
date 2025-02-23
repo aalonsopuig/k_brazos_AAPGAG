@@ -33,21 +33,24 @@ class Softmax(Algorithm):
     def select_arm(self) -> int:
         """
         Selecciona un brazo utilizando la política Softmax.
-
-        **Funcionamiento:**
-        - Aplica la función Softmax a los valores estimados de recompensa.
-        - Utiliza las probabilidades obtenidas para hacer una selección ponderada.
-
-        :return: Índice del brazo seleccionado.
         """
 
-        # Aplicar softmax a las estimaciones de recompensa de los brazos
-        exp_values = np.exp(self.values / self.tau)  # e^(Q(a)/tau)
-        probabilities = exp_values / np.sum(exp_values)  # Normalización para obtener probabilidades
+        # Evitar problemas numéricos restando el máximo
+        shifted_values = self.values - np.max(self.values)
+
+        # Normalización adicional para mejorar la estabilidad
+        std = np.std(shifted_values)
+        if std > 0:
+            shifted_values /= std
+
+        # Aplicar la función Softmax
+        exp_values = np.exp(shifted_values / self.tau)
+        probabilities = exp_values / np.sum(exp_values)
 
         # Seleccionar un brazo basado en la distribución de probabilidades
         chosen_arm = np.random.choice(self.k, p=probabilities)
         return chosen_arm
+
 
     def update(self, chosen_arm: int, reward: float):
         """
