@@ -1,4 +1,4 @@
-# Estudio Comparativo de Algoritmos para el Problema del Bandido Multi-Brazo
+# Práctica 1: Problema del Bandido de k-Brazos
 
 ## Información
 - **Alumnos:** García Meroño, Andrés; Guillén Marquina, Pablo; Alonso Puig, Alejandro  
