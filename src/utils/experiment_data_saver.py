@@ -37,7 +37,7 @@ class ExperimentDataSaver:
 
         if is_arm_statistics:
             # Guardar estadísticas de brazos
-            with open(file_name, mode="w", newline="") as file:
+            with open(file_name, mode='w', newline='', encoding="utf-8") as file:
                 writer = csv.writer(file)
                 writer.writerow(["Algorithm", "Arm", "Mean_Reward", "Count"])
                 for idx, algo in enumerate(data):  # `data` es `arm_stats`
@@ -51,3 +51,5 @@ class ExperimentDataSaver:
             df_sampled.to_csv(file_name, index_label="Step", float_format="%.2f")
 
         print(f"Archivo guardado: {file_name}")
+
+
