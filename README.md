@@ -53,7 +53,6 @@ Este repositorio permite ejecutar experimentos en **Google Colab** o en **un ent
 
 El notebook **main.ipynb** es el punto de inicio del proyecto. Desde él, se proporciona acceso a los notebooks de los estudios.  
 
-### ¿Cómo ejecutar el proyecto?  
 Para poner en marcha la ejecución del proyecto, simplemente sigue estos pasos:  
 
 1. **Abrir main.ipynb** utilizando el siguiente enlace para Google Colab: [Open in Colab](https://colab.research.google.com/github/aalonsopuig/k_brazos_AAPGAG/blob/main/main.ipynb) o bien en el entorno local (VSCode/Jupyter) 
@@ -71,13 +70,7 @@ Para poner en marcha la ejecución del proyecto, simplemente sigue estos pasos:
    En la barra de menú de Colab, haz clic en **Entorno de ejecución > Ejecutar todas**.  
    Esto iniciará una secuencia de pasos automática, que incluye:  
      - **Clonación del repositorio** con todo el código y los experimentos.  
-     - **Instalación de todas las dependencias** necesarias para ejecutar los notebooks. 
-
-   **NOTA IMPORTANTE**: Es posible que al instalar las dependencias nos muestre un mensaje indicando que es necesario reinicial el entorno. Aceptar y volver a hacer clic en **Entorno de ejecución > Ejecutar todas**
-
-### Reproducibilidad garantizada  
-El proyecto está diseñado para que su ejecución en Colab sea completamente reproducible.  
-Si ejecutas este notebook desde cero en un entorno nuevo, todos los experimentos funcionarán sin errores ni necesidad de configuraciones manuales.
+     - **Ejecución del estudio** mostrando los datos y gráficas correspondientes. 
 
 ## Tecnologías Utilizadas  
 - **Lenguaje:** Python 3.x  
