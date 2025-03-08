@@ -1,4 +1,4 @@
-#Snippets de código para incorporar a cada experimento para generar ficheros
+#Snippets de código para incorporar a cada experimento para generar ficheros CSV que permiten análisis posteriores
 
 # ASCENSO DE GRADIENTE ##########################################################
 algoritmo="ascenso_gradiente"
