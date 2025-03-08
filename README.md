@@ -65,7 +65,15 @@ Para poner en marcha la ejecución del proyecto, simplemente sigue estos pasos:
      - **Ascenso de Gradiente**  
      - **Métodos Bayesianos**
        
-   Basta con hacer clic en cualquier enlace para abrir y ejecutar el estudio correspondiente.  
+   Basta con hacer clic en cualquier enlace para abrir y ejecutar el estudio correspondiente.
+
+3. **Ejecutar todas las celdas** en orden automático:  
+   En la barra de menú de Colab, haz clic en **Entorno de ejecución > Ejecutar todas**.  
+   Esto iniciará una secuencia de pasos automática, que incluye:  
+     - **Clonación del repositorio** con todo el código y los experimentos.  
+     - **Instalación de todas las dependencias** necesarias para ejecutar los notebooks. 
+
+   **NOTA IMPORTANTE**: Es posible que al instalar las dependencias nos muestre un mensaje indicando que es necesario reinicial el entorno. Aceptar y volver a hacer clic en **Entorno de ejecución > Ejecutar todas**
 
 ### Reproducibilidad garantizada  
 El proyecto está diseñado para que su ejecución en Colab sea completamente reproducible.  
