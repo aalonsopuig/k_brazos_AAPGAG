@@ -29,33 +29,36 @@ simulando entornos con diferentes niveles de incertidumbre:
 Cada algoritmo debe adaptarse a estas distribuciones para maximizar la recompensa acumulada.  
 
 ## Estructura  
+
+- **`src/algorithms/`**: Contiene las implementaciones de los algoritmos de toma de decisiones, como **Epsilon-Greedy, UCB1, UCB2, Softmax, Gradiente de Preferencias, Thompson Sampling y UCB Bayesiano**.
+- **`src/arms/`**: Contiene las implementaciones de los distintos tipos de brazos del bandido multi-brazo, como **Bernoulli, Binomial, Normal y Beta**.
+- **`src/plotting/`**: Funciones para la visualización de resultados mediante gráficos.
+- **`main.ipynb`**: Notebook principal que permite lanzar los distintos experimentos.
+- **`estudio_*.ipynb`**: Notebooks específicos donde se analizan en detalle diferentes estrategias y algoritmos.
+- **`requirements.txt`**: Lista de dependencias necesarias para la ejecución del proyecto.
+- **`README.md`**: Documento principal con información general del proyecto y su estructura.
+
+Este repositorio permite ejecutar experimentos en **Google Colab** o en **un entorno local**, garantizando reproducibilidad en los análisis y resultados.
+
 El repositorio contiene los siguientes notebooks de análisis:  
 
-- **`main.ipynb`**: Punto de entrada para ejecutar o acceder a los estudios desde **Google Colab**.  
 - **`estudio_epsilon_greedy.ipynb`**: Evaluación de estrategias ε-greedy con diferentes valores de ε.  
 - **`estudio_UCB.ipynb`**: Implementación y análisis de UCB clásico.  
 - **`estudio_ascenso_gradiente.ipynb`**: Estudio del método de gradiente de preferencias.  
 - **`estudio_bayesianos.ipynb`**: Comparación de **Thompson Sampling** y **Bayesian UCB** con distintos hiperparámetros.  
-- **`requirements.txt`**: Dependencias necesarias para ejecutar los notebooks.  
 
 ## Instalación y Uso  
 
-El notebook **main.ipynb** es el punto de inicio del proyecto. Desde él, se configuran automáticamente todas las dependencias y se proporciona acceso a los notebooks de los experimentos.  
+Este repositorio permite ejecutar experimentos en **Google Colab** o en **un entorno local**, garantizando reproducibilidad en los análisis y resultados.
+
+El notebook **main.ipynb** es el punto de inicio del proyecto. Desde él, se proporciona acceso a los notebooks de los estudios.  
 
 ### ¿Cómo ejecutar el proyecto?  
 Para poner en marcha la ejecución del proyecto, simplemente sigue estos pasos:  
 
-1. **Abrir main.ipynb en Google Colab** utilizando el siguiente enlace: [Open in Colab](https://colab.research.google.com/github/aalonsopuig/k_brazos_AAPGAG/blob/main/main.ipynb)  
+1. **Abrir main.ipynb** utilizando el siguiente enlace para Google Colab: [Open in Colab](https://colab.research.google.com/github/aalonsopuig/k_brazos_AAPGAG/blob/main/main.ipynb) o bien en el entorno local (VSCode/Jupyter) 
 
-2. **Ejecutar todas las celdas** en orden automático:  
-   En la barra de menú de Colab, haz clic en **Entorno de ejecución > Ejecutar todas**.  
-   Esto iniciará una secuencia de pasos automática, que incluye:  
-     - **Clonación del repositorio** con todo el código y los experimentos.  
-     - **Instalación de todas las dependencias** necesarias para ejecutar los notebooks.  
-     - **Carga de librerías esenciales** como NumPy, Matplotlib y SciPy.  
-     - **Configuración del entorno** asegurando que todo esté listo para los experimentos.  
-
-3. **Acceder a los notebooks de los experimentos**:  
+2. **Acceder a los notebooks de los experimentos**:  
    Al finalizar la ejecución, en la parte inferior del notebook principal, aparecerán enlaces directos a los notebooks individuales para cada método estudiado:  
      - **ε-Greedy**  
      - **Upper Confidence Bound (UCB)**  
