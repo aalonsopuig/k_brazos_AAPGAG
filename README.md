@@ -39,7 +39,34 @@ El repositorio contiene los siguientes notebooks de análisis:
 - **`requirements.txt`**: Dependencias necesarias para ejecutar los notebooks.  
 
 ## Instalación y Uso  
-(Pendiente de completar)  
+
+El notebook **main.ipynb** es el punto de inicio del proyecto. Desde él, se configuran automáticamente todas las dependencias y se proporciona acceso a los notebooks de los experimentos.  
+
+### ¿Cómo ejecutar el proyecto?  
+Para poner en marcha la ejecución del proyecto, simplemente sigue estos pasos:  
+
+1. **Abrir main.ipynb en Google Colab** utilizando el siguiente enlace: [Open in Colab](https://colab.research.google.com/github/aalonsopuig/k_brazos_AAPGAG/blob/main/main.ipynb)  
+
+2. **Ejecutar todas las celdas** en orden automático:  
+   En la barra de menú de Colab, haz clic en **Entorno de ejecución > Ejecutar todas**.  
+   Esto iniciará una secuencia de pasos automática, que incluye:  
+     - **Clonación del repositorio** con todo el código y los experimentos.  
+     - **Instalación de todas las dependencias** necesarias para ejecutar los notebooks.  
+     - **Carga de librerías esenciales** como NumPy, Matplotlib y SciPy.  
+     - **Configuración del entorno** asegurando que todo esté listo para los experimentos.  
+
+3. **Acceder a los notebooks de los experimentos**:  
+   Al finalizar la ejecución, en la parte inferior del notebook principal, aparecerán enlaces directos a los notebooks individuales para cada método estudiado:  
+     - **ε-Greedy**  
+     - **Upper Confidence Bound (UCB)**  
+     - **Ascenso de Gradiente**  
+     - **Métodos Bayesianos**
+       
+   Basta con hacer clic en cualquier enlace para abrir y ejecutar el estudio correspondiente.  
+
+### Reproducibilidad garantizada  
+El proyecto está diseñado para que su ejecución en Colab sea completamente reproducible.  
+Si ejecutas este notebook desde cero en un entorno nuevo, todos los experimentos funcionarán sin errores ni necesidad de configuraciones manuales.
 
 ## Tecnologías Utilizadas  
 - **Lenguaje:** Python 3.x  
